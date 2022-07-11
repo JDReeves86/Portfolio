@@ -1,0 +1,370 @@
+* {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    background-color: black;
+    color: white;
+    border: 0.5rem solid black;
+}
+
+#headshot {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+header img {
+    min-width: 1rem;
+    width: 8rem;
+    min-height: 1rem;
+    border-radius: 50%;
+    padding-left: 1rem;
+}
+
+header h1 {
+    font-size: 4rem;
+    padding-left: 2rem;
+}
+
+header nav a {
+    display: inline-flex;
+    padding: 0.5rem;
+    font-size: 130%;
+    right: 0;
+    margin-right: 3rem;
+    color: 	white;
+    text-decoration: none;
+    border-left: 0.4rem solid 	#ffcc33;
+    border-right: 0.4rem solid rgba(0, 0, 0, 0);
+    border-top-left-radius: 10px;
+    /* border-bottom-left-radius: 5px; */
+    font-weight: bold;
+}
+
+header nav a:hover{
+    background-color: #ffcc33;
+    color: black;
+    border-right: 0.4rem solid #ffcc33;
+    font-size: xx-large;
+    border-bottom-right-radius: 10px;
+    transition: 0.5s;
+    transition-delay: 0.05s;
+}
+
+.banner {
+    display: flex;
+    padding: 2rem;
+    justify-content: center;
+    border-bottom: 0.5rem solid black;
+    background-image: url(./constr.jpg);
+    background-position: center;
+    background-size: contain;
+}
+
+/* aside {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    left:0%;
+    height:100%;
+    padding: 0 2rem;
+    width: 10rem;
+    max-width: 10rem;
+    min-width: 6rem;
+    flex-basis: 10rem;
+    border-right: 0.5rem solid black;
+    background-color: #ffcc33;
+} */
+
+.about {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    margin: 3rem 5rem;
+    padding: 0rem;
+    border: 0.25rem solid black;
+    background-color: #ffcc33;
+}
+
+.about h2{
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 0.5rem;
+    font-size: xx-large;
+}
+
+.about p {
+    padding: 1rem;
+}
+
+.projects {
+    text-align: center;
+    background-color: #ffcc33;
+    color: black;
+    padding: 1rem;
+    font-size: xx-large;
+    border-top: 0.5rem solid black;
+    border-bottom: 0.5rem solid black
+}
+
+.cardlinks {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 2rem;
+}
+
+.card {
+    display: flex;
+    flex: 1;
+    flex-flow: column;
+    text-align: left;
+    justify-content: space-between;
+    align-content: left;
+    flex-basis: 36rem;
+    min-width: 9rem;
+    max-width: 36rem;
+    height: 27rem;
+    min-height: 9rem;
+    margin: 3rem;
+    /* padding: 1rem; */
+    border: 0.1rem solid black;
+    background-color: #ffcc33;
+    line-height: 1.25;
+    color: black;
+    text-decoration: none;
+    border-top-left-radius: 40px; /*creates blunted edges on 2 corners. Do not forget to alter the border radii of the h3 & p elements when changing these values*/
+    border-bottom-right-radius: 40px; /*creates blunted edges on 2 corners. Do not forget to alter the border radii of the h3 & p elements when changing these values*/
+}
+
+.card:hover{ /* Creates shadows on card items */
+    box-shadow: 
+    0.4rem 0.4rem 1rem -0.1rem black, /* black shadow slightly inset to yellow shadow, creates shading effect */
+    1rem 1rem 1rem #ffcc33,
+    -0.1rem -0.1rem 1rem rgb(197, 197, 197); /* gray shadow on top and left to create a more 3d effect.*/
+}
+
+a {
+    text-decoration: none;
+    text-decoration-color: none;
+    display:contents;
+}
+
+.card h3 {
+    font-size: x-large;
+    width:min-content;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 0.5rem 0.5rem 1rem; /* larger padding on left side, without this, text begins to get weirdly close to edge/border, affects readability */
+    border-width: 0px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.card p { /* bottom placed text for brief description of project */
+    display: flex;
+    font-size: medium;
+    background-color: black;
+    color: #ffcc33;
+    text-decoration: none;
+    margin-right: 0.5rem;
+    border-bottom-right-radius: 34px; /* Cannot get rounded edges to align, looks funky if looked at too closely. Need to find better solution than getting it close enough and hoping nobody notices.*/
+}
+
+/*first project, basis and height/width intentionally larger than the rest. */
+#SEO {
+    background-image: url("./digital-marketing-meeting.jpg");
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 54rem;
+    min-width: 9rem;
+    max-width: 54rem;
+    height: 36rem;
+    min-height: 9rem;
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+/* sets coming soon background */
+#unfinished {
+    background-image: url("./coming_soon.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    background-color: white;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    margin: 1rem;
+    padding: 1rem 2rem;
+    border: 1rem solid #ffcc33;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.contact a {
+    display: inline-flex;
+    padding: 0.5rem;
+    font-size: 130%;
+    margin-right: 3rem;
+    color: 	white;
+    text-decoration: none;
+    border-left: 0.4rem solid 	#ffcc33;
+    border-right: 0.4rem solid black;
+    border-top-left-radius: 10px;
+    font-weight: bold;
+}
+
+.contact a:hover{
+    background-color: #ffcc33;
+    color: black;
+    transition: 0.7s;
+    transition-delay: 0.05s;
+    border-right: 0.4rem solid #ffcc33;
+    border-bottom-right-radius: 10px;
+}
+
+footer  {
+    display: flex;
+    justify-content: center;
+    bottom:0;
+    background-color: black;
+    color: white;
+}
+
+@media screen and (max-width: 1024) {
+    header,
+    main{
+      flex-flow: column;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* footer {
+        text-align: center;
+        width: auto;
+        margin: 0;
+        padding: 0;
+    } */
+
+    .contact {
+        width: 100vw;
+        flex-flow: row wrap;
+    }
+
+    .contact a {
+        font-size: small;
+        margin-right: 0rem;
+        border-right: none;
+    }
+
+    /* #SEO {
+        width: auto;
+        height: auto;
+    } */
+}
+
+@media screen and (max-width: 834px) {
+    .contact a {
+        flex-direction: column;
+        font-size: medium;
+        margin-right: 0rem;
+        border-right: none;
+    } 
+}
+
+@media screen and (max-width: 768px) {
+    header,
+    main, .contact {
+      flex-flow: column wrap;
+      margin: 0;
+      padding: 0;
+    }
+    footer {
+        text-align: center;
+        width: auto;
+        margin: 0;
+        padding: 0;
+        font-size: x-small;
+    }
+    header a{
+        line-height: 1.0;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .about {
+        margin: 1rem;
+        width: auto;
+    }
+
+    .card h3 {
+        font-size: medium;
+    }
+
+    .card p {
+        font-size: small;
+    }
+
+    .contact {
+        padding: 1rem;
+        font-size: small;
+        margin-right: 0rem;
+        border-right: none;
+        }
+    
+    }
+
+    .contact a {
+        border-left: none;
+    }
+
+@media screen and (max-width: 576px) {
+    header,
+    main, .contact {
+      flex-flow: column wrap;
+      margin: 0;
+      padding: 0;
+    }
+
+    header img, footer {
+        padding:0;
+        margin: 0;
+    }
+
+    header a{
+        line-height: 1.0;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .about {
+        margin: 1rem 0rem;
+    }
+
+    .card h3 {
+        font-size: small;
+    }
+
+    .card p {
+        font-size: xx-small;
+    }
+
+}
