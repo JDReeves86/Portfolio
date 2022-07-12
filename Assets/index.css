@@ -1,3 +1,10 @@
+:root {
+    --accent: #ffcc33;
+    --dark: black;
+    --light: white;
+    --bords: 30px
+}
+
 * {
     font-family:Arial, Helvetica, sans-serif;
 }
@@ -8,15 +15,16 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0;
-    background-color: black;
-    color: white;
-    border: 0.5rem solid black;
+    background-color: var(--dark);
+    color: var(--light);
+    border: 0.5rem solid var(--dark);
 }
 
 #headshot {
     display: flex;
     align-items: center;
     justify-content: left;
+    padding-left: 1rem;
 }
 
 header img {
@@ -24,7 +32,6 @@ header img {
     width: 8rem;
     min-height: 1rem;
     border-radius: 50%;
-    padding-left: 1rem;
 }
 
 header h1 {
@@ -38,19 +45,19 @@ header nav a {
     font-size: 130%;
     right: 0;
     margin-right: 3rem;
-    color: 	white;
+    color: 	var(--light);
     text-decoration: none;
-    border-left: 0.4rem solid 	#ffcc33;
-    border-right: 0.4rem solid rgba(0, 0, 0, 0);
+    border-left: 0.4rem solid var(--accent);
+    border-right: 0.4rem solid var(--dark);
     border-top-left-radius: 10px;
     /* border-bottom-left-radius: 5px; */
     font-weight: bold;
 }
 
 header nav a:hover{
-    background-color: #ffcc33;
-    color: black;
-    border-right: 0.4rem solid #ffcc33;
+    background-color: var(--accent);
+    color: var(--dark);
+    border-right: 0.4rem solid var(--accent);
     font-size: xx-large;
     border-bottom-right-radius: 10px;
     transition: 0.5s;
@@ -61,7 +68,7 @@ header nav a:hover{
     display: flex;
     padding: 2rem;
     justify-content: center;
-    border-bottom: 0.5rem solid black;
+    border-bottom: 0.5rem solid var(--dark);
     background-image: url(./constr.jpg);
     background-position: center;
     background-size: contain;
@@ -90,31 +97,32 @@ header nav a:hover{
     justify-content: space-between;
     margin: 3rem 5rem;
     padding: 0rem;
-    border: 0.25rem solid black;
-    background-color: #ffcc33;
+    border: 0.25rem solid var(--dark);
+    background-color: var(--accent);
 }
 
 .about h2{
     width: 100%;
     text-align: center;
-    background-color: black;
-    color: white;
+    background-color: var(--dark);
+    color: var(--light);
     padding: 0.5rem;
     font-size: xx-large;
 }
 
 .about p {
     padding: 1rem;
+    font-weight: 600;
 }
 
 .projects {
     text-align: center;
-    background-color: #ffcc33;
+    background-color: var(--accent);
     color: black;
     padding: 1rem;
     font-size: xx-large;
-    border-top: 0.5rem solid black;
-    border-bottom: 0.5rem solid black
+    border-top: 0.5rem solid var(--dark);
+    border-bottom: 0.5rem solid var(--dark)
 }
 
 .cardlinks {
@@ -138,20 +146,21 @@ header nav a:hover{
     min-height: 9rem;
     margin: 3rem;
     /* padding: 1rem; */
-    border: 0.1rem solid black;
-    background-color: #ffcc33;
+    border: 0.1rem solid var(--dark);
+    background-color: var(--accent);
     line-height: 1.25;
-    color: black;
+    color: var(--dark);
     text-decoration: none;
-    border-top-left-radius: 40px; /*creates blunted edges on 2 corners. Do not forget to alter the border radii of the h3 & p elements when changing these values*/
-    border-bottom-right-radius: 40px; /*creates blunted edges on 2 corners. Do not forget to alter the border radii of the h3 & p elements when changing these values*/
+    border-top-left-radius: 30px; /*creates blunted edges on 2 corners. Do not forget to alter the border radii of the h3 & p elements when changing these values*/
+    border-bottom-right-radius: 30px; /*creates blunted edges on 2 corners. Do not forget to alter the border radii of the h3 & p elements when changing these values*/
 }
 
 .card:hover{ /* Creates shadows on card items */
     box-shadow: 
-    0.4rem 0.4rem 1rem -0.1rem black, /* black shadow slightly inset to yellow shadow, creates shading effect */
-    1rem 1rem 1rem #ffcc33,
+    0.4rem 0.4rem 1rem -0.1rem var(--dark), /* black shadow slightly inset to yellow shadow, creates shading effect */
+    1rem 1rem 1rem var(--accent),
     -0.1rem -0.1rem 1rem rgb(197, 197, 197); /* gray shadow on top and left to create a more 3d effect.*/
+    transition:  0.5s linear;
 }
 
 a {
@@ -160,26 +169,30 @@ a {
     display:contents;
 }
 
+/* title justified flex start for stylized title on the card. */
 .card h3 {
     font-size: x-large;
     width:min-content;
-    background-color: black;
-    color: white;
+    background-color: var(--dark);
+    color: var(--light);
     text-decoration: none;
     padding: 0.5rem 0.5rem 0.5rem 1rem; /* larger padding on left side, without this, text begins to get weirdly close to edge/border, affects readability */
-    border-width: 0px;
+    border: 0px;
+    margin: -1px 0 0 -1px;
     border-top-left-radius: 30px;
     border-bottom-right-radius: 30px;
 }
 
-.card p { /* bottom placed text for brief description of project */
+.card p { /* bottom placed text for brief description of project. Monitor margins to ensure they remain aligned with the card.*/
     display: flex;
     font-size: medium;
-    background-color: black;
-    color: #ffcc33;
+    width: 100%;
+    background-color: var(--dark);
+    color: var(--accent);
     text-decoration: none;
-    margin-right: 0.5rem;
-    border-bottom-right-radius: 34px; /* Cannot get rounded edges to align, looks funky if looked at too closely. Need to find better solution than getting it close enough and hoping nobody notices.*/
+    margin-bottom: -1px;
+    margin-right: 0.1rem;
+    border-bottom-right-radius: var(--bords); /* Cannot get rounded edges to align, looks funky if looked at too closely. Need to find better solution than getting it close enough and hoping nobody notices.*/
 }
 
 /*first project, basis and height/width intentionally larger than the rest. */
@@ -213,39 +226,40 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: scroll;
-    background-color: white;
+    background-color: var(--dark);
 }
 
 .contact {
     display: flex;
     flex-direction: row;
-    background-color: black;
+    background-color: var(--dark);
     margin: 1rem;
     padding: 1rem 2rem;
-    border: 1rem solid #ffcc33;
+    border: 1rem solid var(--accent);
     border-top-left-radius: 40px;
     border-bottom-right-radius: 40px;
 }
 
+/* Eliminated borders on links in contact. Created too much havoc when changing to mobile displays */
 .contact a {
     display: inline-flex;
     padding: 0.5rem;
     font-size: 130%;
     margin-right: 3rem;
-    color: 	white;
+    color: 	var(--light);
     text-decoration: none;
-    border-left: 0.4rem solid 	#ffcc33;
-    border-right: 0.4rem solid black;
+    /* border-left: 0.4rem solid var(--accent); */
+    /* border-right: 0.4rem solid var(--dark); */
     border-top-left-radius: 10px;
     font-weight: bold;
 }
 
 .contact a:hover{
-    background-color: #ffcc33;
+    background-color: var(--accent);
     color: black;
     transition: 0.7s;
     transition-delay: 0.05s;
-    border-right: 0.4rem solid #ffcc33;
+    /* border-right: 0.4rem solid var(--accent); */
     border-bottom-right-radius: 10px;
 }
 
@@ -253,8 +267,8 @@ footer  {
     display: flex;
     justify-content: center;
     bottom:0;
-    background-color: black;
-    color: white;
+    background-color: var(--dark);
+    color: var(--light);
 }
 
 @media screen and (max-width: 1024) {
@@ -280,7 +294,7 @@ footer  {
     .contact a {
         font-size: small;
         margin-right: 0rem;
-        border-right: none;
+        border: none;
     }
 
     /* #SEO {
@@ -335,13 +349,13 @@ footer  {
         padding: 1rem;
         font-size: small;
         margin-right: 0rem;
-        border-right: none;
+        border: none;
         }
     
     }
 
     .contact a {
-        border-left: none;
+        /* border: none; */
     }
 
 @media screen and (max-width: 576px) {
