@@ -26,7 +26,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-size: 100%;
+    font-size: 150%;
 }
 
 header {
@@ -231,6 +231,14 @@ a {
 
 #colorGen {
     background-image: url(./rainbow.jpg);
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+#dice-game {
+    background-image: url(./dice.jpg);
     background-position: center;
     background-size:cover;
     background-repeat: no-repeat;
