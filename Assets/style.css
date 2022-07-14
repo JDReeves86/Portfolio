@@ -7,11 +7,16 @@
 
 * {
     font-family:Arial, Helvetica, sans-serif;
+    line-height: 1.25;
 }
 
 /* Underlines all elements with class containing "underline" consider adding to other elements if underlining desired. */
 *[class*=underline] {
     text-decoration: underline;
+}
+
+*[class*=bold] {
+    font-weight: bolder;
 }
 
 h1 {
@@ -27,6 +32,10 @@ h4,
 h5,
 h6 {
     font-size: 150%;
+}
+
+.list {
+    list-style: inside;
 }
 
 header {

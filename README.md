@@ -69,7 +69,10 @@ WHEN the link to the section about my work is clicked.
 <br>
 
 ![myscreenshot](./Assets/Screenshot1.png)
-   Header & About section
+
+<br>
+
+Header & About section
 
 <br>
 
@@ -78,7 +81,10 @@ WHEN the link to the section about my work is clicked.
 <br>
 
 ![myscreenshot](./Assets/Screenshot2.png)
-   Projects section incl. initial project
+
+<br>
+
+Projects section incl. initial project
 
 <br>
 
@@ -87,7 +93,10 @@ WHEN the link to the section about my work is clicked.
 <br>
 
 ![myscreenshot](./Assets/Screenshot3.png)
-   Example of responsive layout set to iPhone SE display size in portrait mode.
+
+<br>
+
+Example of responsive layout set to iPhone SE display size in portrait mode.
 
 
 <br>
