@@ -14,7 +14,7 @@
 *[class*=underline] {
     text-decoration: underline;
 }
-
+/* Bolds all elements with class containing "bold" consider adding to other elements if bold text desired. */
 *[class*=bold] {
     font-weight: bolder;
 }
@@ -34,10 +34,12 @@ h6 {
     font-size: 150%;
 }
 
+/* Ensures list in about section has bullet points displayed. */
 .list {
     list-style: inside;
 }
 
+/* Spaces out header including picture, name and navbar */
 header {
     display: flex;
     flex-flow: row wrap;
@@ -49,6 +51,7 @@ header {
     border: 0.5rem solid var(--dark);
 }
 
+/* ID includes picture and name, seperately display doesn't work out the way I want. */
 #headshot {
     display: flex;
     align-items: center;
@@ -56,6 +59,7 @@ header {
     padding-left: 1rem;
 }
 
+/* Ensures headshot is rounded and sized appropriately. */
 header img {
     min-width: 1rem;
     width: 8rem;
@@ -67,6 +71,7 @@ header h1 {
     padding-left: 2rem;
 }
 
+/* navbar display */
 .nav-bar a {
     display: inline-flex;
     padding: 0.5rem;
@@ -82,6 +87,7 @@ header h1 {
     font-weight: bold;
 }
 
+/* ensures navbar links transition on hover. */
 .nav-bar a:hover{
     background-color: var(--accent);
     color: var(--dark);
@@ -91,6 +97,7 @@ header h1 {
     transition: 0.5s;
     transition-delay: 0.05s;
 }
+
 
 .banner {
     display: flex;
@@ -102,6 +109,8 @@ header h1 {
     background-size: contain;
 }
 
+/* Tried an aside, was not digging how it displayed or affected the layout. May consider bringing back in the future possibly as the navbar or a floating contact section?
+Will definitely need some work to get it to display properly. */
 /* aside {
     display: flex;
     flex-flow: column nowrap;
@@ -160,6 +169,7 @@ header h1 {
     margin: 2rem;
 }
 
+/* sets basic card sizing and display. */
 .card {
     display: flex;
     flex: 1;
@@ -191,6 +201,7 @@ header h1 {
     transition:  0.5s linear;
 }
 
+/* display:contents ensures that entire card functions as link and displays properly. Without the CSS gets all kinds of wonky. */
 a {
     text-decoration: none;
     text-decoration-color: none;
@@ -238,6 +249,7 @@ a {
     background-attachment: scroll;
 }
 
+/* color generator card */
 #colorGen {
     background-image: url(./rainbow.jpg);
     background-position: center;
@@ -246,6 +258,7 @@ a {
     background-attachment: scroll;
 }
 
+/* Dice game card */
 #dice-game {
     background-image: url(./dice.jpg);
     background-position: center;
@@ -264,6 +277,7 @@ a {
     background-color: var(--dark);
 }
 
+/* contact section. Maybe change to a floating sidebar in the future? */
 .contact {
     display: flex;
     flex-direction: row;
@@ -306,6 +320,8 @@ footer  {
     color: var(--light);
 }
 
+
+/* media queries to ensure responsive layout with mobile displays. */
 @media screen and (max-width: 1024) {
     header,
     main{

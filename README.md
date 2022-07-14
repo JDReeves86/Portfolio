@@ -5,6 +5,16 @@
 
 ---
 
+### Contents ###
+
+---
+
+1. Objectives
+2. About
+3. Screenshots
+4. Links
+5. Assignment details & gradind rubric (*ignore me*)
+
 <br>
 <br>
 
@@ -64,6 +74,7 @@ WHEN the link to the section about my work is clicked.
 <br>
 
 ### Screenshots ###
+
 ---
 
 <br>
@@ -98,6 +109,18 @@ Projects section incl. initial project
 
 Example of responsive layout set to iPhone SE display size in portrait mode.
 
+<br>
+
+### Links ###
+
+---
+
+<br>
+
+
+> Link to Github repo: https://github.com/JDReeves86/02challengeTurnIn
+
+> Link to live page: https://jdreeves86.github.io/02challengeTurnIn/
 
 <br>
 <br>
