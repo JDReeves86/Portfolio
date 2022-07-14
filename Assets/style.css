@@ -283,7 +283,7 @@ a {
 .contact a:hover{
     background-color: var(--accent);
     color: black;
-    transition: 0.7s;
+    transition: 0.5s;
     transition-delay: 0.05s;
     /* border-right: 0.4rem solid var(--accent); */
     border-bottom-right-radius: 10px;

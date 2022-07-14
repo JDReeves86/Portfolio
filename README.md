@@ -1,3 +1,118 @@
+# Challenge 02 #
+
+
+## My Portfolio ##
+
+---
+
+<br>
+<br>
+
+### Objectives ###
+
+---
+
+<br>
+
+1. Present potential employer with my name, a recent photo or avatar, and links to sections about me, my work, and how to contact me.
+2. UI scrolls to the corresponding section
+WHEN the link to the section about my work is clicked.
+3. UI scrolls to a section with titled images of my applications.
+4. Initial application's image should be larger in size than the others.
+5. Clicking on images of applications take user to that deployed application.
+6. Site has a responsive layout that adapts to users viewport.
+
+<br>
+<br>
+
+### About ###
+
+---
+
+<br>
+
+1. Present potential employer with my name, a recent photo or avatar, and links to sections about me, my work, and how to contact me.
+    >Header includes a photo of myself along with my first & last name. As well as a navigation bar with links to the 3 main sections of my page.
+
+<br>
+
+2. UI scrolls to the corresponding section
+WHEN the link to the section about my work is clicked.
+    > When clicking the links in the navigation bar, the user will be taken to the corresponding section of the page. These sections include an 'About' section where a brief description of my experience, professional goals and achievements can be found. Subsequent sections include a section of current and deployed projects, and a section with contact information as well as links to my LinkedIn and GitHub pages.
+
+<br>
+
+3. UI scrolls to a section with titled images of my applications.
+    > In the section of my projects/applications the user will find pictures representing the project. Including the title of the project and a brief comment that summarizes the function of the project. Please note that at this time there are more cards than deployed applications. These sections will be styled and made active as more projects are completed and deployed. Currently the cards are active links that will simply reload the page.
+
+<br>
+
+4. Initial application's image should be larger in size than the others.
+    >First project loaded is the first challenge submit during the UW Coding Bootcamp. As more projects and applications are developed this will be replaced by more robust projects.
+
+<br>
+
+5. Clicking on images of applications take user to that deployed application.
+    >Each card is wrapped in an anchor element and designed so that entire body of the card is a clickable link. 
+
+<br>
+
+6. Site has a responsive layout that adapts to users viewport.
+    >Media queries are used so that the page is responsive to a variety of viewport sizes including mobile platforms. This can be checked using the developer tools of your browser and you will notice that items will resize and restructure to create a more user friendly experience. Please note that as a more narrow display is selected, the initial application size will more closely resemble the other application cards.
+
+<br>
+<br>
+
+### Screenshots ###
+---
+
+<br>
+
+![myscreenshot](./Assets/Screenshot1.png)
+   Header & About section
+
+<br>
+
+  ---
+
+<br>
+
+![myscreenshot](./Assets/Screenshot2.png)
+   Projects section incl. initial project
+
+<br>
+
+  ---
+
+<br>
+
+![myscreenshot](./Assets/Screenshot3.png)
+   Example of responsive layout set to iPhone SE display size in portrait mode.
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+---
+
+---
+
+## Assignment Details & Grading Rubric ##
+
+---
+
+---
+
+<br>
+<br>
+
 # 02 Advanced CSS: Portfolio
 
 ## Your Task
