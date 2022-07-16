@@ -13,7 +13,7 @@
 2. About
 3. Screenshots
 4. Links
-5. Assignment details & gradind rubric (*ignore me*)
+5. Assignment details & grading rubric (*ignore me*)
 
 <br>
 <br>
