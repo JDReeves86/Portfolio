@@ -267,6 +267,14 @@ a {
     background-attachment: scroll;
 }
 
+#mealDecider{
+    background-image: url(./food.jpg);
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
 /* sets coming soon background */
 #unfinished {
     background-image: url("./coming_soon.jpg");
