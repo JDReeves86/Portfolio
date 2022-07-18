@@ -118,9 +118,10 @@ Example of responsive layout set to iPhone SE display size in portrait mode.
 <br>
 
 
-> Link to Github repo: https://github.com/JDReeves86/02challengeTurnIn
+Link to Github repo: https://github.com/JDReeves86/02challengeTurnIn
 
-> Link to live page: https://jdreeves86.github.io/02challengeTurnIn/
+
+Link to live page: https://jdreeves86.github.io/02challengeTurnIn/
 
 <br>
 <br>
