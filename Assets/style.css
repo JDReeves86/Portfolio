@@ -45,10 +45,12 @@ header {
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 0;
+    padding: 0.5rem;
     background-color: var(--dark);
     color: var(--light);
-    border: 0.5rem solid var(--dark);
+    /* border: 0.5rem solid var(--dark); */
+    border-bottom: var(--accent) solid 0.5rem;
+    outline: var(--dark) solid 0.5rem;
 }
 
 /* ID includes picture and name, seperately display doesn't work out the way I want. */
