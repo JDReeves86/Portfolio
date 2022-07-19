@@ -191,6 +191,7 @@ Will definitely need some work to get it to display properly. */
     line-height: 1.25;
     color: var(--dark);
     text-decoration: none;
+    opacity: 85%;
     border-top-left-radius: 30px; /*creates blunted edges on 2 corners. Do not forget to alter the border radii of the h3 & p elements when changing these values*/
     border-bottom-right-radius: 30px; /*creates blunted edges on 2 corners. Do not forget to alter the border radii of the h3 & p elements when changing these values*/
 }
@@ -200,7 +201,8 @@ Will definitely need some work to get it to display properly. */
     0.4rem 0.4rem 1rem -0.1rem var(--dark), /* black shadow slightly inset to yellow shadow, creates shading effect */
     1rem 1rem 1rem var(--accent),
     -0.1rem -0.1rem 1rem rgb(197, 197, 197); /* gray shadow on top and left to create a more 3d effect.*/
-    transition:  0.5s linear;
+    transition:  0.2s linear;
+    opacity: 100%;
 }
 
 /* display:contents ensures that entire card functions as link and displays properly. Without the CSS gets all kinds of wonky. */
