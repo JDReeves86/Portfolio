@@ -239,7 +239,7 @@ a {
 
 /*first project, basis and height/width intentionally larger than the rest. */
 #mealDecider {
-    background-image: url("./digital-marketing-meeting.jpg");
+    background-image: url(./food.jpg);
     flex: 1 1 100%;
     /* flex-shrink: 1;
     flex-basis: 54rem; */
@@ -265,14 +265,6 @@ a {
 /* Dice game card */
 #dice-game {
     background-image: url(./dice.jpg);
-    background-position: center;
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-}
-
-#mealDecider{
-    background-image: url(./food.jpg);
     background-position: center;
     background-size:cover;
     background-repeat: no-repeat;
