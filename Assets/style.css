@@ -238,7 +238,7 @@ a {
 }
 
 /*first project, basis and height/width intentionally larger than the rest. */
-#SEO {
+#mealDecider {
     background-image: url("./digital-marketing-meeting.jpg");
     flex: 1 1 100%;
     /* flex-shrink: 1;
