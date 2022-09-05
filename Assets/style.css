@@ -271,6 +271,15 @@ a {
     background-attachment: scroll;
 }
 
+#todo {
+    background-image: url(./checklist.png);
+    background-position: center;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-color: var(--light);
+}
+
 /* sets coming soon background */
 #unfinished {
     background-image: url("./coming_soon.jpg");
