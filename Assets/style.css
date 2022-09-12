@@ -1,13 +1,17 @@
 :root {
-    --accent: #fbbd08;
-    --dark: black;
-    --light: white;
+    --accent: hsl(217, 71%, 53%);
+    --dark: hsl(0, 0%, 14%);
+    --light: hsl(0, 0%, 86%);
     --bords: 30px
 }
 
 * {
     font-family:Arial, Helvetica, sans-serif;
     line-height: 1.25;
+}
+
+html {
+    background-color: var(--light);
 }
 
 /* Ensures list in about section has bullet points displayed. */
@@ -26,10 +30,12 @@ header {
 /* navbar display */
 .nav-bar a {
     color: 	var(--light);
-    text-decoration: none;
+    /* text-decoration: none; */
     border-left: 0.4rem solid var(--accent);
     border-right: 0.4rem solid var(--dark);
     border-top-left-radius: 10px;
+    font-size: x-large;
+    
 }
 
 /* ensures navbar links transition on hover. */
@@ -37,7 +43,7 @@ header {
     background-color: var(--accent);
     color: var(--dark);
     border-right: 0.4rem solid var(--accent);
-    font-size: xx-large;
+    font-size:xx-large;
     border-bottom-right-radius: 10px;
     transition: 0.5s;
     transition-delay: 0.05s;
@@ -45,31 +51,28 @@ header {
 
 .about {
     border: 0.25rem solid var(--dark);
-    background-color: var(--accent);
-}
-
-.about-body {
-    color: var(--dark)
-}
-
-#about-header{
     background-color: var(--dark);
     color: var(--light);
 }
 
+#about-header{
+    background-color: var(--accent);
+    color: var(--dark);
+}
+
 .projects {
     background-color: var(--accent);
-    color: black;
+    color: var(--dark);
     border-top: 0.5rem solid var(--dark);
     border-bottom: 0.5rem solid var(--dark)
 }
 
 .text-white {
-    color: white;
+    color: var(--light);
 }
 
 .text-black {
-    color: black
+    color: var(--dark)
 }
 
 /* contact section. Maybe change to a floating sidebar in the future? */
