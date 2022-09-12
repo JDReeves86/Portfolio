@@ -10,30 +10,6 @@
     line-height: 1.25;
 }
 
-/* Underlines all elements with class containing "underline" consider adding to other elements if underlining desired. */
-/* *[class*=underline] {
-    text-decoration: underline;
-} */
-/* Bolds all elements with class containing "bold" consider adding to other elements if bold text desired. */
-/* *[class*=bold] {
-    font-weight: bolder;
-}
-
-h1 {
-    font-size: 450%;
-}
-
-h2 {
-    font-size: 200%;
-}
-
-h3,
-h4,
-h5,
-h6 {
-    font-size: 150%;
-} */
-
 /* Ensures list in about section has bullet points displayed. */
 .list {
     list-style: inside;
@@ -67,25 +43,6 @@ header {
     transition-delay: 0.05s;
 }
 
-/* Tried an aside, was not digging how it displayed or affected the layout. May consider bringing back in the future possibly as the navbar or a floating contact section?
-Will definitely need some work to get it to display properly. */
-/* aside {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    justify-content: space-around;
-    position: absolute;
-    left:0%;
-    height:100%;
-    padding: 0 2rem;
-    width: 10rem;
-    max-width: 10rem;
-    min-width: 6rem;
-    flex-basis: 10rem;
-    border-right: 0.5rem solid black;
-    background-color: #ffcc33;
-} */
-
 .about {
     border: 0.25rem solid var(--dark);
     background-color: var(--accent);
@@ -100,7 +57,6 @@ Will definitely need some work to get it to display properly. */
     color: var(--light);
 }
 
-/* project banner */
 .projects {
     background-color: var(--accent);
     color: black;
@@ -108,20 +64,12 @@ Will definitely need some work to get it to display properly. */
     border-bottom: 0.5rem solid var(--dark)
 }
 
-/* sets basic card sizing and display. */
- .card {
-    opacity: 90%;
-    border-bottom-left-radius: 30px; 
-    border-bottom-right-radius: 30px; 
-}  
+.text-white {
+    color: white;
+}
 
- .card:hover{ 
-    box-shadow: 
-    0.4rem 0.4rem 1rem -0.1rem var(--dark), 
-    1rem 1rem 1rem var(--accent),
-    -0.1rem -0.1rem 1rem rgb(197, 197, 197); 
-    transition:  0.2s linear;
-    opacity: 100%;
+.text-black {
+    color: black
 }
 
 /* contact section. Maybe change to a floating sidebar in the future? */
