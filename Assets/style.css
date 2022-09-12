@@ -11,11 +11,11 @@
 }
 
 /* Underlines all elements with class containing "underline" consider adding to other elements if underlining desired. */
-*[class*=underline] {
+/* *[class*=underline] {
     text-decoration: underline;
-}
+} */
 /* Bolds all elements with class containing "bold" consider adding to other elements if bold text desired. */
-*[class*=bold] {
+/* *[class*=bold] {
     font-weight: bolder;
 }
 
@@ -32,7 +32,7 @@ h4,
 h5,
 h6 {
     font-size: 150%;
-}
+} */
 
 /* Ensures list in about section has bullet points displayed. */
 .list {
@@ -41,52 +41,19 @@ h6 {
 
 /* Spaces out header including picture, name and navbar */
 header {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.5rem;
     background-color: var(--dark);
     color: var(--light);
-    /* border: 0.5rem solid var(--dark); */
     border-bottom: var(--accent) solid 0.5rem;
     outline: var(--dark) solid 0.5rem;
 }
 
-/* ID includes picture and name, seperately display doesn't work out the way I want. */
-#headshot {
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    padding-left: 1rem;
-}
-
-/* Ensures headshot is rounded and sized appropriately. */
-header img {
-    min-width: 1rem;
-    width: 8rem;
-    min-height: 1rem;
-    border-radius: 50%;
-}
-
-header h1 {
-    padding-left: 2rem;
-}
-
 /* navbar display */
 .nav-bar a {
-    display: inline-flex;
-    padding: 0.5rem;
-    font-size: 130%;
-    right: 0;
-    margin-right: 3rem;
     color: 	var(--light);
     text-decoration: none;
     border-left: 0.4rem solid var(--accent);
     border-right: 0.4rem solid var(--dark);
     border-top-left-radius: 10px;
-    /* border-bottom-left-radius: 5px; */
-    font-weight: bold;
 }
 
 /* ensures navbar links transition on hover. */
@@ -98,17 +65,6 @@ header h1 {
     border-bottom-right-radius: 10px;
     transition: 0.5s;
     transition-delay: 0.05s;
-}
-
-
-.banner {
-    display: flex;
-    padding: 2rem;
-    justify-content: center;
-    border-bottom: 0.5rem solid var(--dark);
-    background-image: url(./constr.jpg);
-    background-position: center;
-    background-size: contain;
 }
 
 /* Tried an aside, was not digging how it displayed or affected the layout. May consider bringing back in the future possibly as the navbar or a floating contact section?
@@ -131,187 +87,55 @@ Will definitely need some work to get it to display properly. */
 } */
 
 .about {
-    display: flex;
-    flex-flow: column;
-    justify-content: space-between;
-    margin: 3rem 5rem;
-    padding: 0rem;
     border: 0.25rem solid var(--dark);
     background-color: var(--accent);
 }
 
-.about-header{
-    width: 100%;
-    text-align: center;
-    background-color: var(--dark);
-    color: var(--light);
-    padding: 0.5rem;
+.about-body {
+    color: var(--dark)
 }
 
-.about-body{
-    padding: 1rem;
-    font-weight: 600;
+#about-header{
+    background-color: var(--dark);
+    color: var(--light);
 }
 
 /* project banner */
 .projects {
-    text-align: center;
     background-color: var(--accent);
     color: black;
-    padding: 1rem;
     border-top: 0.5rem solid var(--dark);
     border-bottom: 0.5rem solid var(--dark)
 }
 
-/* Ensures the cards display properly and function as links */
-.card-links {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    margin: 2rem;
-}
-
 /* sets basic card sizing and display. */
-.card {
-    display: flex;
-    flex: 1;
-    flex-flow: column;
-    text-align: left;
-    justify-content: space-between;
-    align-content: left;
-    flex-basis: 36rem;
-    min-width: 9rem;
-    max-width: 36rem;
-    height: 27rem;
-    min-height: 9rem;
-    margin: 3rem;
-    /* padding: 1rem; */
-    border: 0.1rem solid var(--dark);
-    background-color: var(--accent);
-    line-height: 1.25;
-    color: var(--dark);
-    text-decoration: none;
-    opacity: 85%;
-    border-top-left-radius: 30px; /*creates blunted edges on 2 corners. Do not forget to alter the border radii of the h3 & p elements when changing these values*/
-    border-bottom-right-radius: 30px; /*creates blunted edges on 2 corners. Do not forget to alter the border radii of the h3 & p elements when changing these values*/
-}
+ .card {
+    opacity: 90%;
+    border-bottom-left-radius: 30px; 
+    border-bottom-right-radius: 30px; 
+}  
 
-.card:hover{ /* Creates shadows on card items */
+ .card:hover{ 
     box-shadow: 
-    0.4rem 0.4rem 1rem -0.1rem var(--dark), /* black shadow slightly inset to yellow shadow, creates shading effect */
+    0.4rem 0.4rem 1rem -0.1rem var(--dark), 
     1rem 1rem 1rem var(--accent),
-    -0.1rem -0.1rem 1rem rgb(197, 197, 197); /* gray shadow on top and left to create a more 3d effect.*/
+    -0.1rem -0.1rem 1rem rgb(197, 197, 197); 
     transition:  0.2s linear;
     opacity: 100%;
 }
 
-/* display:contents ensures that entire card functions as link and displays properly. Without the CSS gets all kinds of wonky. */
-a {
-    text-decoration: none;
-    text-decoration-color: none;
-    display:contents;
-}
-
-/* title justified flex start for stylized title on the card. */
-.card-header {
-    width:min-content;
-    background-color: var(--dark);
-    color: var(--light);
-    text-decoration: none;
-    padding: 0.5rem 0.5rem 0.5rem 1rem; /* larger padding on left side, without this, text begins to get weirdly close to edge/border, affects readability */
-    border: 0px;
-    margin: -1px 0 0 -1px;
-    border-top-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-}
-
-.card-body { /* bottom placed text for brief description of project. Monitor margins to ensure they remain aligned with the card.*/
-    display: flex;
-    font-size: medium;
-    width: 100%;
-    background-color: var(--dark);
-    color: var(--accent);
-    text-decoration: none;
-    margin-bottom: -1px;
-    margin-right: 0.1rem;
-    border-bottom-right-radius: var(--bords); /* Cannot get rounded edges to align, looks funky if looked at too closely. Need to find better solution than getting it close enough and hoping nobody notices.*/
-}
-
-/*first project, basis and height/width intentionally larger than the rest. */
-#mealDecider {
-    background-image: url(./food.jpg);
-    flex: 1 1 100%;
-    /* flex-shrink: 1;
-    flex-basis: 54rem; */
-    min-width: 9rem;
-    max-width: 100%;
-    height: 36rem;
-    min-height: 9rem;
-    background-position: center;
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-}
-
-/* color generator card */
-#colorGen {
-    background-image: url(./rainbow.jpg);
-    background-position: center;
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-}
-
-/* Dice game card */
-#dice-game {
-    background-image: url(./dice.jpg);
-    background-position: center;
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-}
-
-#todo {
-    background-image: url(./checklist.png);
-    background-position: center;
-    background-size:contain;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-color: var(--light);
-}
-
-/* sets coming soon background */
-#unfinished {
-    background-image: url("./coming_soon.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: scroll;
-    background-color: var(--dark);
-}
-
 /* contact section. Maybe change to a floating sidebar in the future? */
 .contact {
-    display: flex;
-    flex-direction: row;
     background-color: var(--dark);
-    margin: 1rem;
-    padding: 1rem 2rem;
+    color: var(--light);
     border: 1rem solid var(--accent);
     border-top-left-radius: 40px;
     border-bottom-right-radius: 40px;
 }
 
 /* Eliminated borders on links in contact. Created too much havoc when changing to mobile displays */
-.contact a {
-    display: inline-flex;
-    padding: 0.5rem;
-    font-size: 130%;
-    margin-right: 3rem;
+ .contact a {
     color: 	var(--light);
-    text-decoration: none;
-    /* border-left: 0.4rem solid var(--accent); */
-    /* border-right: 0.4rem solid var(--dark); */
     border-top-left-radius: 10px;
     font-weight: bold;
 }
@@ -321,150 +145,10 @@ a {
     color: black;
     transition: 0.5s;
     transition-delay: 0.05s;
-    /* border-right: 0.4rem solid var(--accent); */
     border-bottom-right-radius: 10px;
 }
 
 footer  {
-    display: flex;
-    justify-content: center;
-    bottom:0;
     background-color: var(--dark);
     color: var(--light);
-}
-
-
-/* media queries to ensure responsive layout with mobile displays. */
-@media screen and (max-width: 1024) {
-    header,
-    main{
-      flex-flow: column;
-      margin: 0;
-      padding: 0;
-    }
-
-    footer {
-        text-align: center;
-        width: auto;
-        margin: 0;
-        padding: 0;
-    }
-
-    .contact {
-        display: flex;
-        width: 100vw;
-        flex-flow: row wrap;
-    }
-
-    .contact a {
-        display: flex;
-        flex-flow: column wrap;
-        font-size: medium;
-        margin-right: 0rem;
-        border: none;
-    }
-
-}
-
-@media screen and (max-width: 918px) {
-    .contact {
-        display: flex;
-        flex-flow: column wrap;
-    }
-    
-    .contact a {
-        flex-direction: column;
-        font-size: small;
-        margin-right: 0rem;
-        border-right: none;
-    } 
-}
-
-@media screen and (max-width: 768px) {
-    header,
-    main {
-      flex-flow: column wrap;
-      margin: 0;
-      padding: 0;
-    }
-
-    footer {
-        text-align: center;
-        width: auto;
-        margin: 0;
-        padding: 0;
-        font-size: x-small;
-    }
-
-    header a{
-        line-height: 1.0;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-    }
-
-    .about {
-        margin: 1rem;
-        width: auto;
-    }
-
-    .card h3 {
-        font-size: medium;
-    }
-
-    .card p {
-        font-size: small;
-    }
-
-    /* .contact {
-        padding: 1rem;
-        font-size: small;
-        margin-right: 0rem;
-        border: 1rem solid var(--accent);
-        } */
-    
-    }
-
-    /* .contact a {
-        border: none;
-    } */
-
-@media screen and (max-width: 576px) {
-    header,
-    main {
-      flex-flow: column wrap;
-      margin: 0;
-      padding: 0;
-    }
-
-    header img{
-        padding:0;
-        margin: 0;
-    }
-
-    header a{
-        line-height: 1.0;
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-
-    h1,
-    h2 {
-        font-size: xx-large;
-    }
-
-    .about,
-    .card-links,
-    .contact,
-    footer {
-        margin: 1rem 0rem;
-    }
-
-    .card h3 {
-        font-size: small;
-    }
-
-    .card p {
-        font-size: xx-small;
-    }
-
-}
+} 

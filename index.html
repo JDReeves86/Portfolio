@@ -4,112 +4,170 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./node_modules/bulma/css/bulma.min.css">
     <link href="./Assets/reset.css" rel="stylesheet">
     <link href="./Assets/style.css" rel="stylesheet">
     <title>Jacob Reeves Portfolio</title>
 </head>
 <body>
-    <header class="header">
-        <div id="headshot">
-            <img src="./Assets/Me-head.jpg" alt="An image of nothing." id="its_me"/>
-            <h1 class="bold">Jacob Reeves</h1>
+    <header class="level p-2">
+        <div class="level-left">
+            <figure class="level-item image is-128x128">
+                <img src="./Assets/Me-head.jpg" alt="An image of nothing." class="is-rounded"/>
+            </figure>
+            <h1 class="level-item is-size-1 has-text-weight-bold">Jacob Reeves</h1>
         </div>
-        <nav class="nav-bar">
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
+        <nav class="nav-bar level-right">
+          <a href="#about" class="level-item is-size-4 has-text-weight-semibold px-1">About</a>
+          <a href="#projects" class="level-item is-size-4 has-text-weight-semibold px-1">Projects</a>
+          <a href="#contact" class="level-item is-size-4 has-text-weight-semibold px-1">Contact</a>
         </nav>
     </header>
-    <!-- <section class="banner">
-        <h2></h2>
-    </section> -->
-    <!-- Sidebar containing ?headers for content? to the left. -->
-    <!-- <aside> 
-        <h2 id="aboutme">About Me</h2>
-        <h2 id="work">Work</h2>
-    </aside> -->
-    <main>
-        <section class="about" id="about">
-            <h2 class="about-header">About me</h2>
-            <article class="about-body">
-                <p>Web and software development is a far cry from nursing, but here I stand. I have spent the past 13 years serving others during their most difficult of times.
-                    Over a decade of working with the most vulnerable in a high stakes environment has helped me foster an attitude of constant growth, self reflection and seeking excellence.
-                    Spending the last 10 years in critical care, and through the covid pandemic, I have developed an ability to act quickly and think critically through stressful situations.
-                    I now look to blend the past with my future and bring the skills I have developed over the course of my nursing career with my newfound technical skills. 
-                    I hope to find a job where I can effectively leverage both of these skills to enact change while continuing to expand my abilities.
-                </p>
-                <br>
-                <p>Programming languages I am proficient in:</p>
-                    <ul class="list">
-                        <li>HTML5</li>
-                        <li>CSS</li>
-                        <li>Javasript</li>
-                    </ul>
-                <br>
-                <p>Prior to beginning my journey I began learning basic HTML, CSS & Javascript. Before undergoing any formal training I was able to succesfully build:</p>
-                    <ul class="list">
-                        <li><span class="underline-bold">Random color generator:</span>&nbsp;for all your random color needs.</li>
-                        <li><span class="underline-bold">Dice game:</span>&nbsp;Pick a number, decide whether the dice will roll higher or lower, then roll the dice to see what happens.</li>
-                    </ul>
-                <br>
-                <p>I look forward to taking the next leap in my career by honing my skills and developing a toolset that will allow me to be succesful wherever the journey ahead may lead.</p>
-            </article>
-        </section>
-        <section class="projects" id="projects">
-            <h2>Projects</h2>
-        </section>
-        <section class="card-links">
-            <a href="https://tonytran97.github.io/WhatsForDinner/" target="none">
-                <section class="card" id="mealDecider">
-                    <h3 class="card-header">WhatsForDinner</h3>
-                    <div class="card-body">
-                        <p>Can't decide what to eat? Let the universe choose for you.</p>
+
+    <main class="container.is-fullhd py-3">      
+            <section class="about m-6 is-full content" id="about">
+                <h2 class="p-3 has-text-centered" id="about-header">About me</h2>
+                <div class="about-body m-3 p-3">
+                    <p>Web and software development is a far cry from nursing, but here I stand. I have spent the past 13 years serving others during their most difficult of times.
+                        Over a decade of working with the most vulnerable in a high stakes environment has helped me foster an attitude of constant growth, self reflection and seeking excellence.
+                        Spending the last 10 years in critical care, and through the covid pandemic, I have developed an ability to act quickly and think critically through stressful situations.
+                        I now look to blend the past with my future and bring the skills I have developed over the course of my nursing career with my newfound technical skills. 
+                        I hope to find a job where I can effectively leverage both of these skills to enact change while continuing to expand my abilities.
+                    </p>
+                    <br>
+                    <p>Programming languages I am proficient in:</p>
+                        <ul class="list">
+                            <li>HTML5</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    <br>
+                    <p>I look forward to taking the next leap in my career by honing my skills and developing a toolset that will allow me to be succesful wherever the journey ahead may lead.</p>
+                </div>
+            </section>
+   
+        <div class="container.is-fullhd py-3">
+            <div class="columns">
+                <section class="projects column is-full has-text-centered p-5">
+                    <h2 class="is-size-2 has-text-weight-semibold">Projects</h2>
+                </section>
+            </div>
+                <section class="columns is-multiline is-6 is-centered">
+                    <div class="column is-6 m-4">
+                        <div class="card">
+                            <a href="https://tonytran97.github.io/WhatsForDinner/" target="none">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="./Assets/food.jpg" alt="Placeholder image" class="myimg">
+                                </figure>
+                                </div>
+                                <div class="card-content">
+                                <div class="media">
+                                    <div class="media-left">
+                                    </div>
+                                    <div class="media-content">
+                                    <p class="title is-4">WhatsForDinner</p>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    Can't decide what to eat? Let the universe choose for you.
+                                </div>
+                            </div>
+                            </a>    
+                        </div>
                     </div>
                 </section>
-            </a>
-            <a href="https://jdreeves86.github.io/colorGenerator/" target="none">
-                <section class="card" id="colorGen">
-                    <h3 class="card-header">Random Color Generator</h3>
-                    <div class="card-body">
-                        <p>You want colors? We got colors.</p>
+                <section class="columns is-multiline is-6 is-centered">
+                    <div class="column is-4 m-6">
+                        <div class="card">
+                            <a href="https://jdreeves86.github.io/colorGenerator/" target="none">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="./Assets/rainbow.jpg" alt="Placeholder image">
+                                </figure>
+                                </div>
+                                <div class="card-content">
+                                <div class="media">
+                                    <div class="media-left">
+                                    </div>
+                                    <div class="media-content">
+                                    <p class="title is-4">Random Color Generator</p>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    You want colors? We got colors.
+                                </div>
+                            </div>
+                            </a>
+                        </div>
                     </div>
-                </section> 
-            </a>
-            <a href="https://jdreeves86.github.io/diceGame/" target="none">
-                <section class="card" id="dice-game">
-                    <h3 class="card-header">Dice Game</h3>
-                    <div class="card-body">
-                        <p>Pick a number and roll the dice!</p>
+                    <div class="column is-4 m-6">
+                        <div class="card">
+                            <a href="https://jdreeves86.github.io/diceGame/" target="none">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="./Assets/dice.jpg" alt="Placeholder image">
+                                </figure>
+                                </div>
+                                <div class="card-content">
+                                <div class="media">
+                                    <div class="media-left">
+                                    </div>
+                                    <div class="media-content">
+                                    <p class="title is-4">Dice Game</p>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    Pick a number and roll the dice!
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="column is-4 m-6">
+                        <div class="card">
+                            <a href="https://jdreeves86.github.io/bug-free-broccoli/" target="none"></a>
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="./Assets/checklist.png" alt="Placeholder image">
+                                </figure>
+                                </div>
+                                <div class="card-content">
+                                <div class="media">
+                                    <div class="media-left">
+                                    </div>
+                                    <div class="media-content">
+                                    <p class="title is-4">Task Tracker</p>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    Get some stuff done.
+                                </div>
+                            </div>
+                            </a>
+                        </div>
                     </div>
                 </section>
-            </a>
-            <a href="https://jdreeves86.github.io/bug-free-broccoli/" target="none">
-                <section class="card" id="todo">
-                    <h3 class="card-header">To-do / checklist</h3>
-                    <div class="card-body">
-                        <p>Get some stuff done.</p>
-                    </div>
-                </section>
-            </a>
-            <a href="" target="none">
-                <section class="card" id="unfinished">
-                    <h3 class="card-header">Coming Soon</h3>
-                    <div class="card-body">
-                        <p></p>
-                    </div>
-                </section>
-            </a>
-        </section>
-        <!-- anchor items wrapped around section turn entire card into clickable link -->
+            <!-- anchor items wrapped around section turn entire card into clickable link -->
     </main>
-    <section class="contact" id="contact">
-        <a href="mailto: JDReeves86@gmail.com"><span class="contact-underline-bold">E-mail:</span>&nbsp;JDReeves86gmail.com</a>
-        <a><span class="contact-underline-bold">Phone:</span>&nbsp;714-588-9188</a> <!-- Span items allow for styling of contact information-->
-        <a href="https://www.linkedin.com/in/jacob-reeves-4237a9238/" target="none">LinkedIn</a>
-        <a href="https://github.com/JDReeves86?tab=repositories" target="none">GitHub</a>
-        <a href="https://docs.google.com/document/d/1lZ0oq_g1BTosezgiiM0GG5BTYMFUDMLd/edit?usp=sharing&ouid=105025530709824252770&rtpof=true&sd=true" target="none">Resume</a>
+    <section class="contact columns is-vcentered mx-6" id="contact">
+        <div class="column is-7 is-size-5 has-text-weight-semibold">
+            E-mail: <a class="p-1" href="mailto: JDReeves86@gmail.com">JDReeves86gmail.com</a>
+        </div>
+        <div class="column is-2 is-size-5 has-text-weight-semibold">
+            <a class="p-1"><span >Phone:</span>&nbsp;714-588-9188</a>
+        </div>
+        <div class="column is-1 is-size-5 has-text-weight-semibold">
+            <a class="p-1" href="https://www.linkedin.com/in/jacob-reeves-4237a9238/" target="none">LinkedIn</a>
+        </div>
+        <div class="column is-1 is-size-5 has-text-weight-semibold">
+            <a class="p-1" href="https://github.com/JDReeves86?tab=repositories" target="none">GitHub</a>
+        </div>
+        <div class="column is-1 is-size-5 has-text-weight-semibold">
+            <a class="p-1" href="https://docs.google.com/document/d/1lZ0oq_g1BTosezgiiM0GG5BTYMFUDMLd/edit?usp=sharing&ouid=105025530709824252770&rtpof=true&sd=true" target="none">Resume</a>
+        </div>
     </section>
-    <footer>
+    <footer class="has-text-centered">
         <h4>Made with love & lots of ☕</h4>
     </footer>
 </body>
