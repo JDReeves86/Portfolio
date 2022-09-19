@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600&family=Reem+Kufi+Ink&family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <link href="./Assets/reset.css" rel="stylesheet">
     <link href="./Assets/style.css" rel="stylesheet">
     <title>Jacob Reeves Portfolio</title>
@@ -19,35 +22,48 @@
                 <h1 class="level-item is-size-1 has-text-weight-bold">Jacob Reeves</h1>
             </div>
             <nav class="nav-bar level-right">
-                <a href="#about" class="level-item has-text-weight-semibold px-1">About</a>
-                <a href="#projects" class="level-item has-text-weight-semibold px-1">Projects</a>
-                <a href="#contact" class="level-item has-text-weight-semibold px-1">Contact</a>
+                <a class="level-item has-text-weight-semibold px-1" id="aboutBtn">About</a>
+                <a class="level-item has-text-weight-semibold px-1" id="projectBtn">Projects</a>
+                <a class="level-item has-text-weight-semibold px-1" id="contactBtn">Contact</a>
             </nav>
         </div>
     </header>
+
+    <div class="m-6" id="loaderContainer" style="display:none">
+        <div class="columns">
+            <div class="column is-10 is-offset-1 has-text-centered is-size-3 has-text-weight-semibold" id="loader">
+                Here come the goods!
+            </div>
+        </div>
+        <div class="columns">
+            <progress class="column is-10 is-offset-1 progress is-medium is-link" max="100"></progress>
+        </div>
+    </div>
+
     <main class="container.is-fullhd py-3">      
-            <section class="about m-6 is-full hero" id="about">
-                <h2 class="p-3 has-text-centered is-size-2 has-text-weight-semibold" id="about-header">About me</h2>
-                <div class="about-body m-3 p-3">
-                    <p class="is-size-6">Web and software development is a far cry from nursing, but here I stand. I have spent the past 13 years serving others during their most difficult of times.
-                        Over a decade of working with the most vulnerable in a high stakes environment has helped me foster an attitude of constant growth, self reflection and seeking excellence.
-                        Spending the last 10 years in critical care, and through the covid pandemic, I have developed an ability to act quickly and think critically through stressful situations.
-                        I now look to blend the past with my future and bring the skills I have developed over the course of my nursing career with my newfound technical skills. 
-                        I hope to find a job where I can effectively leverage both of these skills to enact change while continuing to expand my abilities.
-                    </p>
-                    <br>
-                    <p class="is-size-6">Programming languages I am proficient in:</p>
-                        <ul class="list">
-                            <li class="is-size-6">HTML5</li>
-                            <li class="is-size-6">CSS</li>
-                            <li class="is-size-6">JavaScript</li>
-                        </ul>
-                    <br>
-                    <p class="is-size-6">I look forward to taking the next leap in my career by honing my skills and developing a toolset that will allow me to be succesful wherever the journey ahead may lead.</p>
-                </div>
-            </section>
+        <section class="about m-6 is-full hero" style='display:none' id="about">
+            <h2 class="p-3 has-text-centered is-size-2 has-text-weight-semibold" id="about-header">About me</h2>
+            <div class="about-body m-3 p-3">
+                <p class="is-size-6">Web and software development is a far cry from nursing, but here I stand. I have spent the past 13 years serving others during their most difficult of times.
+                    Over a decade of working with the most vulnerable in a high stakes environment has helped me foster an attitude of constant growth, self reflection and seeking excellence.
+                    Spending the last 10 years in critical care, and through the covid pandemic, I have developed an ability to act quickly and think critically through stressful situations.
+                    I now look to blend the past with my future and bring the skills I have developed over the course of my nursing career with my newfound technical skills. 
+                    I hope to find a job where I can effectively leverage both of these skills to enact change while continuing to expand my abilities.
+                </p>
+                <br>
+                <p class="is-size-6">Programming languages I am proficient in:</p>
+                    <ul class="list">
+                        <li class="is-size-6">HTML5</li>
+                        <li class="is-size-6">CSS</li>
+                        <li class="is-size-6">JavaScript</li>
+                    </ul>
+                <br>
+                <p class="is-size-6">I look forward to taking the next leap in my career by honing my skills and developing a toolset that will allow me to be succesful wherever the journey ahead may lead.</p>
+            </div>
+        </section>
    
-        <div class="container.is-fullhd py-3">
+        
+        <section class="container.is-fullhd py-3" style="display:none" id="projects">
             <div class="columns">
                 <section class="projects column is-full has-text-centered p-5">
                     <h2 class="is-size-2 has-text-weight-semibold">Projects</h2>
@@ -118,30 +134,36 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
             <!-- anchor items wrapped around section turn entire card into clickable link -->
+    
+        <section class="contact columns is-vcentered is-centered mx-6 my-3" id="contact" style="display:none">
+            <div class="column is-3 is-size-5 has-text-weight-semibold">
+                E-mail: <a class="p-1" href="mailto: JDReeves86@gmail.com">JDReeves86gmail.com</a>
+            </div>
+            <div class="column is-2 is-size-5 has-text-weight-semibold">
+                <p class="p-1">Phone: 714-588-9188</p>
+            </div>
+            <div class="column is-1 is-size-5 has-text-weight-semibold">
+                <a class="p-1" href="https://www.linkedin.com/in/jacob-reeves-4237a9238/" target="none">LinkedIn</a>
+            </div>
+            <div class="column is-1 is-size-5 has-text-weight-semibold">
+                <a class="p-1" href="https://github.com/JDReeves86?tab=repositories" target="none">GitHub</a>
+            </div>
+            <div class="column is-1 is-size-5 has-text-weight-semibold">
+                <a class="p-1" href="https://docs.google.com/document/d/1lZ0oq_g1BTosezgiiM0GG5BTYMFUDMLd/edit?usp=sharing&ouid=105025530709824252770&rtpof=true&sd=true" target="none">Resume</a>
+            </div>
+        </section>
     </main>
-    <section class="contact columns is-vcentered is-centered mx-6" id="contact">
-        <div class="column is-3 is-size-5 has-text-weight-semibold">
-            E-mail: <a class="p-1" href="mailto: JDReeves86@gmail.com">JDReeves86gmail.com</a>
+    <footer class="footer p-1">
+        <div class="content has-text-centered">
+            <h4>Made with love & lots of ☕</h4> 
         </div>
-        <div class="column is-2 is-size-5 has-text-weight-semibold">
-            <p class="p-1">Phone: 714-588-9188</p>
-        </div>
-        <div class="column is-1 is-size-5 has-text-weight-semibold">
-            <a class="p-1" href="https://www.linkedin.com/in/jacob-reeves-4237a9238/" target="none">LinkedIn</a>
-        </div>
-        <div class="column is-1 is-size-5 has-text-weight-semibold">
-            <a class="p-1" href="https://github.com/JDReeves86?tab=repositories" target="none">GitHub</a>
-        </div>
-        <div class="column is-1 is-size-5 has-text-weight-semibold">
-            <a class="p-1" href="https://docs.google.com/document/d/1lZ0oq_g1BTosezgiiM0GG5BTYMFUDMLd/edit?usp=sharing&ouid=105025530709824252770&rtpof=true&sd=true" target="none">Resume</a>
-        </div>
-    </section>
-    <footer class="has-text-centered">
-        <h4>Made with love & lots of ☕</h4> 
-        </footer>
+    </footer>
+
+
     <script src="https://kit.fontawesome.com/0967160a47.js" crossorigin="anonymous"></script>
+    <script src="./Assets/script.js" rel="text'javascript"></script>
     <!-- 
         HTML icon => <i class="fa-brands fa-html5"></i>
         CSS icon => <i class="fa-brands fa-css3-alt"></i>
