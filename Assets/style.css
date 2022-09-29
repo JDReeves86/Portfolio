@@ -10,7 +10,7 @@
 }
 
 html {
-    background-image: radial-gradient(ellipse at center bottom, hsl(197, 64%, 48%),var(--accent), hsl(241, 64%, 44%), black);
+    background-image: linear-gradient(to left, hsl(197, 63%, 39%),hsl(217, 62%, 33%), hsl(241, 65%, 30%), rgb(51, 51, 51));
     background-size: cover;
 }
 
@@ -69,11 +69,12 @@ header {
 }
 
 .projects {
-    background-color: var(--accent);
+    background-color: hsla(217, 71%, 53%, 0.459);
     color: var(--dark);
     border-top: 0.5rem solid var(--dark);
     border-bottom: 0.5rem solid var(--dark);
     font-family: 'Prompt', sans-serif;
+
 }
 
 .text-white {
@@ -86,9 +87,9 @@ header {
 
 /* contact section. Maybe change to a floating sidebar in the future? */
 .contact {
-    background-color: var(--dark);
+    background-color: hsla(0, 0%, 14%, 0.568);
     color: var(--light);
-    border: 1rem solid var(--accent);
+    border: 1rem solid hsla(217, 71%, 53%, 0.459);
     border-top-left-radius: 40px;
     border-bottom-right-radius: 40px;
     font-family: 'Prompt', sans-serif;
