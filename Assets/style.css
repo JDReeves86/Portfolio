@@ -10,8 +10,7 @@
 }
 
 html {
-    background-image: linear-gradient(to left, hsl(197, 63%, 39%),hsl(217, 62%, 33%), hsl(241, 65%, 30%), rgb(51, 51, 51));
-    background-size: cover;
+    background-color: var(--light);
 }
 
 /* Ensures list in about section has bullet points displayed. */
@@ -22,10 +21,28 @@ html {
 /* Spaces out header including picture, name and navbar */
 header {
     font-family: 'Reem Kufi Ink', sans-serif;
-    background-color: hsla(0, 0%, 14%, 0.568);
-    color: var(--light);
     border-bottom: var(--accent) solid 0.5rem;
+    color: var(--light);
     /* outline: var(--dark) solid 0.5rem; */
+}
+
+.gradient-background {
+	background: linear-gradient(-45deg, #2565b0, #2731b7, #2e21a3, #19106c, #250c58, #3c0c58, #441161, #4b1868, #622686, #823caa, #a759d4);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	/* height: 100vh; */
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 /* navbar display */
@@ -111,10 +128,81 @@ header {
 }
 
 .footer {
-    background-color: hsla(0, 0%, 86%, 0.692);
-    color: var(--dark);
     position: fixed;
     bottom: 0;
     width: 100%;
     font-family: 'Prompt', sans-serif;
 } 
+
+.cards {
+	height: 400px;
+	width: 400px;
+    margin-left: 3rem;
+}
+
+.cardContent {
+	text-align: center;
+	position: relative;
+	padding: 12rem;
+	transition: transform 2s;
+	background-color: #281e87;
+	transform-style: preserve-3d;
+    border-radius: 15px;
+}
+
+.cards:hover .cardContent {
+	transform: rotateY(0.5turn);
+}
+
+.cardFront,
+.cardBack {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 1rem;
+	transform-style: preserve-3d;
+	backface-visibility: hidden;
+}
+
+.cardFront {
+	/* background-color: lightgreen; */
+	border: 1px solid black;
+    border-radius: 15px;
+	margin: 1rem;
+	transform: translateZ(1rem);
+}
+
+.cardBack {
+	/* transform: rotateX(0.5turn); */
+	transform: rotateY(0.5turn);
+	background-color: #db7500;
+    border-radius: 15px;
+}
+
+.card-header {
+	font-size: 2rem;
+    text-align: center;
+    padding: 1rem;
+	transform: translateZ(2rem);
+	border-bottom: 2px solid black;
+}
+
+.card-content {
+	transform: translateZ(1rem);
+    padding: 1rem;
+}
+
+.cardBody {
+	transform: translateZ(1rem);
+}
+
+#dinner {
+    height: 360px;
+    width: 360px;
+}
+
+#icons {
+    padding-top: 5rem
+}

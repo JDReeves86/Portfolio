@@ -16,23 +16,23 @@ function show(el) {
     el.removeAttribute('style')
 }
 
-function transition(el, ...oth) {
-    show(loading)
+function transition(el, temp, ...oth) {
+    show(temp)
     hide(el)
     hide(...oth)
     setTimeout(() => {
-        hide(loading);
+        hide(temp);
         show(el);
         hide(...oth)
     }, 1500)
 }
 
 abtBtn.addEventListener('click', function(){
-    transition(abt, proj, cont)
+    transition(abt, loading, proj, cont)
 });
 projectBtn.addEventListener('click', function () {
-    transition(proj, abt, cont)
+    transition(proj, loading, abt, cont)
 });
 contactBtn.addEventListener('click', function () {
-    transition(cont, abt, proj)
+    transition(cont, loading, abt, proj)
 });
