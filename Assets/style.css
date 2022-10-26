@@ -120,7 +120,7 @@ header {
 .contact {
     background-color: hsla(0, 0%, 14%, 0.568);
     color: var(--light);
-    border: 1rem solid hsla(217, 71%, 53%, 0.459);
+    border: 1rem solid var(--blue);
     border-top-left-radius: 40px;
     border-bottom-right-radius: 40px;
     font-family: 'Prompt', sans-serif;
