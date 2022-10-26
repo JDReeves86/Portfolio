@@ -1,5 +1,9 @@
 :root {
-    --accent: hsl(217, 71%, 53%);
+    --red: #c80d0d;
+    --yellow: #f8ca05;
+    --blue: #52b2cb;
+    --orange: #ffa133;
+    --green: #abdb9a;
     --dark: hsl(0, 0%, 14%);
     --light: hsl(0, 0%, 86%);
     --bords: 30px
@@ -21,16 +25,17 @@ html {
 /* Spaces out header including picture, name and navbar */
 header {
     font-family: 'Reem Kufi Ink', sans-serif;
-    border-bottom: var(--accent) solid 0.5rem;
+    border-bottom: var(--blue) solid 0.5rem;
     color: var(--light);
+    background-color: var(--dark);
     /* outline: var(--dark) solid 0.5rem; */
 }
 
 .gradient-background {
-	background: linear-gradient(-45deg, #2565b0, #2731b7, #2e21a3, #19106c, #250c58, #3c0c58, #441161, #4b1868, #622686, #823caa, #a759d4);
-	background-size: 400% 400%;
+	/* background: linear-gradient(-45deg, #2565b0, #2731b7, #2e21a3, #19106c, #250c58, #3c0c58, #441161, #4b1868, #622686, #823caa, #a759d4); */
+	background: linear-gradient(-45deg, var(--red), var(--orange), var(--yellow));
+    background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
-	/* height: 100vh; */
 }
 
 @keyframes gradient {
@@ -49,7 +54,7 @@ header {
 .nav-bar a {
     color: 	var(--light);
     /* text-decoration: none; */
-    border-left: 0.4rem solid var(--accent);
+    border-left: 0.4rem solid var(--blue);
     border-top-left-radius: 10px;
     font-size: x-large;
     
@@ -57,9 +62,9 @@ header {
 
 /* ensures navbar links transition on hover. */
 .nav-bar a:hover{
-    background-color: var(--accent);
+    background-color: var(--blue);
     color: var(--dark);
-    border-right: 0.4rem solid var(--accent);
+    border-right: 0.4rem solid var(--blue);
     font-size:xx-large;
     border-bottom-right-radius: 10px;
     transition: 0.5s;
@@ -67,8 +72,18 @@ header {
 }
 
 #loaderContainer {
-    color: var(--light);
+    color: var(--dark);
     font-family: 'Prompt', sans-serif;
+    padding-top: 20vh;
+    font-size:70px;
+    font-weight: bolder;
+};
+
+.square {
+    height: 100px;
+    width: 100px;
+    background-color: #abdb9a;
+    position: fixed;
 }
 
 .about {
@@ -81,7 +96,7 @@ header {
 #about-header{
     border-top-left-radius: var(--bords);
     border-top-right-radius: var(--bords);
-    background-color: var(--accent);
+    background-color: var(--blue);
     color: var(--dark);
 }
 
@@ -91,7 +106,6 @@ header {
     border-top: 0.5rem solid var(--dark);
     border-bottom: 0.5rem solid var(--dark);
     font-family: 'Prompt', sans-serif;
-
 }
 
 .text-white {
@@ -120,7 +134,7 @@ header {
 }
 
 .contact a:hover{
-    background-color: var(--accent);
+    background-color: var(--blue);
     color: black;
     transition: 0.5s;
     transition-delay: 0.05s;
@@ -145,7 +159,7 @@ header {
 	position: relative;
 	padding: 12rem;
 	transition: transform 2s;
-	background-color: #281e87;
+	background-color: var(--blue);
 	transform-style: preserve-3d;
     border-radius: 15px;
 }
@@ -177,7 +191,7 @@ header {
 .cardBack {
 	/* transform: rotateX(0.5turn); */
 	transform: rotateY(0.5turn);
-	background-color: #db7500;
+	background-color: var(--dark);
     border-radius: 15px;
 }
 
